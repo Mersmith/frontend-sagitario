@@ -1,0 +1,113 @@
+/* CONTENEDOR NOSOTROS */
+.contenedor_nosotros {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 80px 20px;
+}
+
+/* CONTENEDOR NOSOTROS IMAGEN */
+.contenedor_nosotros_imagen {
+    width: 50%;
+    padding: 20px;
+}
+
+.contenedor_nosotros_imagen img {
+    width: 100%;
+}
+
+/* CONTENEDOR NOSOTROS DESCRIPCIÓN */
+.contenedor_nosotros_descripcion {
+    width: 50%;
+    padding: 20px;
+}
+
+/* CABECERA */
+.contenedor_nosotros_descripcion a {
+    font-weight: 600;
+    font-size: 16px;
+    color: #FA4318;
+    margin: 5px 0px;
+    margin-bottom: 10px;
+    display: block;
+    text-decoration: none;
+}
+
+.contenedor_nosotros_descripcion h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #080C24;
+    line-height: 60px;
+}
+
+.contenedor_nosotros_descripcion p {
+    padding-left: 10px;
+    border-left: 5px solid #FA4318;
+    line-height: 30px;
+    margin: 18px 0px;
+    font-size: 20px;
+}
+
+/* ITEMS */
+.contenedor_nosotros_descripcion div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contenedor_nosotros_descripcion div ul {
+    list-style: none;
+    font-weight: 500;
+}
+
+.contenedor_nosotros_descripcion div ul li+li {
+    margin-top: 14px;
+}
+
+.contenedor_nosotros_descripcion div ul i {
+    color: #FA4318;
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #D9D9D9;
+    margin-top: 25px;
+}
+
+@media (max-width: 1400px) {
+
+    /* ITEMS */
+    .contenedor_nosotros_descripcion div {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contenedor_nosotros_descripcion div img {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 1000px) {
+
+    /* CONTENEDOR NOSOTROS */
+    .contenedor_nosotros {
+        flex-direction: column;
+    }
+
+    /* CONTENEDOR NOSOTROS IMAGEN */
+    .contenedor_nosotros_imagen {
+        width: 100%;
+    }
+
+    /* CONTENEDOR NOSOTROS DESCRIPCIÓN */
+    .contenedor_nosotros_descripcion {
+        width: 100%;
+    }
+
+    .contenedor_nosotros_descripcion div img {
+        margin-top: 20px;
+    }
+
+}

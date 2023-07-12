@@ -1,0 +1,155 @@
+.contenedor_caracteristicas {
+    padding: 20px;
+    background-color: var(--color-secundario);
+    box-shadow: var(--color-sombra);
+    border-radius: 20px;
+    position: relative;
+    top: -60px;
+    z-index: 2;
+}
+
+/* CONTENEDOR CARACTERÍSTICAS DESCRIPCIÓN */
+.contenedor_caracteristicas_descripcion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0px;
+    gap: 30px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* CABECERA */
+.contenedor_caracteristicas_descripcion a {
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--color-terciario);
+    margin: 5px 0px;
+    margin-bottom: 10px;
+    display: block;
+    text-decoration: none;
+}
+
+.contenedor_caracteristicas_descripcion h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--color-quinario);
+    line-height: 60px;
+    text-align: start;
+    padding-right: 30px;
+}
+
+.contenedor_caracteristicas_descripcion p {
+    line-height: 30px;
+    font-size: 20px;
+    text-align: justify;
+    padding-top: 30px;
+}
+
+/* CONTENEDOR CONTROLES */
+.controles_slider_caracteristicas {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+
+.controles_slider_caracteristicas button {
+    border: none;
+    font-size: 24px;
+    color: var(--color-terciario);
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+    background-color: var(--color-secundario);
+    border-radius: 50%;
+    box-shadow: var(--color-sombra);
+}
+
+.controles_slider_caracteristicas button:hover {
+    color: var(--color-secundario);
+    background-color: var(--color-terciario-hover);
+}
+
+/* CONTENEDOR ITEMS CARACTERÍSTICAS */
+.contenedor_caracteristicas {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.contenedor_items_caracteristicas {
+    margin-top: 20px;
+    display: flex;
+    transition: transform 0.5s ease;
+
+}
+
+.item_caracteristica {
+    flex: 0 0 calc(100% / 3);
+    padding: 20px;
+}
+
+.item_caracteristica_contenedor {
+    border-radius: 10px;
+    padding: 30px;
+    /*background-color: rgba(8, 12, 36, 0.05);*/
+}
+
+.item_caracteristica_contenedor h3 {
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--color-quinario);
+    line-height: 24px;
+    margin-bottom: 15px;
+}
+
+.item_caracteristica_contenedor p {
+    line-height: 24px;
+    margin: 10px 0px;
+}
+
+.item_caracteristica_contenedor div {
+    background-color: var(--color-terciario);
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+    display: inline-flex;
+    border-radius: 50%;
+    position: relative;
+    margin: 5px 0 22px 5px;
+}
+
+.item_caracteristica_contenedor div img {
+    margin: auto;
+    width: auto;
+}
+
+@media (max-width: 1400px) {
+
+    .item_caracteristica {
+        flex: 0 0 calc(100% / 2);
+    }
+
+}
+
+@media (max-width: 1000px) {
+
+    .contenedor_caracteristicas_descripcion {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .contenedor_caracteristicas_descripcion a {
+        text-align: center;
+    }
+
+    .contenedor_caracteristicas_descripcion h2 {
+        border-right: none;
+        padding-right: 0px;
+    }
+
+    .item_caracteristica {
+        flex: 0 0 calc(100% / 1);
+    }
+
+}

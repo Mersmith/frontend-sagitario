@@ -1,0 +1,114 @@
+
+/* FONDO CONTENEDOR MISIÓN */
+.fondo_contenedor_mision{
+    background: url("../../../assets/fondos/fondo-4.png");
+}
+
+.opacidad_contenedor_mision {
+    position: relative;
+    background-size: cover !important;
+    background-position: center !important;
+    z-index: 0;
+}
+
+.opacidad_contenedor_mision:after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(8, 12, 36, 0.9);
+    z-index: -1;
+}
+
+.contenedor_mision {
+    display: flex;
+    align-items: center;
+    padding: 80px 20px;
+}
+
+/* CONTENEDOR MISIÓN DESCRIPCIÓN */
+.contenedor_mision_descripcion{
+    padding: 20px;
+}
+
+/* CABECERA */
+.contenedor_mision_descripcion a {
+    font-weight: 600;
+    font-size: 16px;
+    color: #FA4318;
+    margin: 5px 0px;
+    margin-bottom: 10px;
+    display: block;
+    text-decoration: none;
+}
+
+.contenedor_mision_descripcion h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+    line-height: 60px;
+}
+
+.contenedor_mision_descripcion p:nth-child(3) {
+    line-height: 30px;
+    margin: 18px 0px;
+    font-size: 18px;
+    color: white;
+}
+
+/* ITEMS */
+.contenedor_mision_descripcion ul li {
+    display: flex;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.contenedor_mision_descripcion ul li span {
+    position: relative;
+    flex: none;
+    padding: 5px 0 0 5px;
+    z-index: 0;
+    margin-right: 15px;
+}
+
+.contenedor_mision_descripcion ul li span:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: transparent;
+    height: 50px;
+    width: 50px;
+    border: 1px solid #FA4318;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.contenedor_mision_descripcion ul li div {
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.contenedor_mision_descripcion ul li p {
+    line-height: 32px;
+
+}
+
+/* CONTENEDOR MISIÓN IMAGEN */
+.contenedor_mision_imagen{
+    padding: 20px;
+}
+
+.contenedor_mision_imagen img{
+    width: 100%;
+}
+
+@media (max-width: 1000px) {
+
+    .contenedor_mision {
+        flex-direction: column
+    }    
+
+}

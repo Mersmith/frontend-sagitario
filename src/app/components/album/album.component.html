@@ -1,0 +1,18 @@
+<div class="contenedor_album">
+  <div *ngFor="let imagen of imagenes" class="album_item">
+    <img [src]="imagen.url" (click)="mostrarImagen(imagen.url)" alt="">
+  </div>
+</div>
+
+<div class="modal_album" *ngIf="imagenSeleccionada">
+  <div class="modal_album_contenido">
+    <span class="album_cerrar" (click)="cerrarModal()">
+      <i class="fas fa-chevron-down"></i>
+    </span>
+    <img [src]="imagenSeleccionada" alt="">
+    <div class="album_controles">
+      <button class="previous-btn" (click)="mostrarImagenAnterior()">&#8249;</button>
+      <button class="next-btn" (click)="mostrarImagenSiguiente()">&#8250;</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,52 @@
+.contenedor_banner {
+    background: url("../../../assets/banner/banner-1.png");
+    position: relative;
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    height: 350px;
+}
+
+.contenedor_banner:after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(3, 0, 12, 0.6);
+}
+
+.contenedor_banner div{
+    position: relative;
+    z-index: 2;
+    top: 35%;
+    padding-left: 10%;
+}
+
+.contenedor_banner div h2{
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 83px;
+    margin-bottom: 0px;
+    color: #fff;
+}
+
+.contenedor_banner div p{
+    color: #fff;
+}
+
+.contenedor_banner div a{
+    text-decoration: none;
+    outline: none;
+    color: #FA4318;
+    padding-right: 15px;
+}
+
+@media (max-width: 800px) {
+
+    .contenedor_banner div h2{
+        font-size: 34px;
+    }
+
+}

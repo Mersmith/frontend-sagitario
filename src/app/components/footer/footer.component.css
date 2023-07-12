@@ -1,0 +1,213 @@
+footer {
+    background-color: #080C24;
+    padding: 0px 20px;
+    color: white;
+}
+
+/* DIRECCIÓN */
+.contenedor_direccion_contacto_horario {
+    padding: 50px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    gap: 30px;
+}
+
+.contenedor_direccion_contacto_horario>div {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.contenedor_direccion_contacto_horario>div div:first-child {
+    flex: none;
+    height: 80px;
+    width: 80px;
+    border-radius: 5px;
+    background: #FA4318;
+    line-height: 80px;
+    text-align: center;
+    position: relative;
+    margin: 6px 20px 0 6px;
+}
+
+.contenedor_direccion_contacto_horario>div div:first-child:after {
+    content: "";
+    position: absolute;
+    background: #FA4318;
+    opacity: 0.3;
+    height: 80px;
+    width: 80px;
+    border-radius: 5px;
+    left: -6px;
+    top: -6px;
+}
+
+.contenedor_direccion_contacto_horario img {
+    vertical-align: middle;
+}
+
+.contenedor_direccion_contacto_horario h3 {
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+.contenedor_direccion_contacto_horario p {
+    margin-bottom: 10px;
+    color: #D6D6D6;
+    ;
+}
+
+/* PIE */
+.contenedor_grid_pie {
+    padding: 50px 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "pie_descripcion  pie_enlaces pie_servicios pie_suscripcion";
+    gap: 20px;
+}
+
+.pie_descripcion {
+    grid-area: pie_descripcion;
+}
+
+.pie_enlaces {
+    grid-area: pie_enlaces;
+}
+
+.pie_servicios {
+    grid-area: pie_servicios;
+}
+
+.pie_suscripcion {
+    grid-area: pie_suscripcion;
+}
+
+.contenedor_grid_pie p {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 26px;
+    margin-bottom: 23px;
+}
+
+.pie_redes_sociales a {
+    background: transparent;
+    border: 1px solid #FFFFFF;
+    color: #fff;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.pie_redes_sociales a:hover {
+    background: #FA4318;
+    border: 1px solid #FA4318;
+}
+
+.contenedor_grid_pie h3 {
+    padding-bottom: 13px;
+    margin-bottom: 26px;
+    position: relative;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+    color: #F8F8F8;
+}
+
+.contenedor_grid_pie h3:after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    bottom: 0px;
+    left: 0;
+    background: linear-gradient(90.09deg, #FA4318 -7.63%, rgba(250, 67, 24, 0) 99.84%);
+    transform: translate(0, 50%);
+    z-index: 0;
+}
+
+.contenedor_grid_pie ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 15px;
+}
+
+.contenedor_grid_pie ul li {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.contenedor_grid_pie ul li i {
+    margin-right: 5px;
+}
+
+.contenedor_grid_pie ul li a {
+    text-decoration: none;
+    outline: none;
+    color: inherit;
+}
+
+.pie_suscripcion div {
+    height: 60px;
+    line-height: 60px;
+    display: flex;
+}
+
+.pie_suscripcion input[type=text] {
+    height: 100%;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    border: 0;
+    padding: 0 20px;
+    width: 100%;
+}
+
+.pie_suscripcion button {
+    padding: 0 21px;
+    height: 60px;
+    border: 0;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 0px;
+    background: #FA4318;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+
+    .contenedor_grid_pie {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "pie_descripcion pie_descripcion"
+            "pie_enlaces pie_servicios"
+            "pie_suscripcion pie_suscripcion";
+    }
+
+    .pie_descripcion,
+    .pie_enlaces,
+    .pie_servicios,
+    .pie_suscripcion {
+        padding: 20px 0px;
+    }
+
+}
+
+@media (max-width: 800px) {
+
+    .contenedor_direccion_contacto_horario {
+        justify-content: start;
+    }
+
+    .contenedor_direccion_contacto_horario>div {
+        flex-direction: column;
+    }
+
+}

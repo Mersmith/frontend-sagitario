@@ -1,0 +1,95 @@
+<footer>
+
+    <!-- DIRECCIÓN -->
+    <div class="contenedor_direccion_contacto_horario">
+
+        <!-- CONTÁCTENOS -->
+        <div class="pie_contactenos">
+            <div>
+                <img src="assets/iconos/icono-8.png" alt="imagen">
+            </div>
+            <div>
+                <h3>TELÉFONOS:</h3>
+                <p>076288366</p>
+                <p>976391241</p>
+                <p>987772531</p>
+                <p>976332572</p>
+            </div>
+        </div>
+
+        <!-- DIRECCIÓN -->
+        <div class="pie_direccion">
+            <div>
+                <img src="assets/iconos/icono-7.png" alt="imagen">
+            </div>
+            <div>
+                <h3>DIRECCIÓN DE LA OFICINA:</h3>
+                <p>Jr. Los pensamientos N° 138 </p>
+                <p>Urb. El Jardín – Cajamarca</p>
+            </div>
+        </div>
+
+        <!-- HORARIO -->
+        <div class="pie_horario">
+            <div>
+                <img src="assets/iconos/icono-9.png" alt="imagen">
+            </div>
+            <div>
+                <h3>CORREOS:</h3>
+                <p>gerencia@transportessagitario.com</p>
+                <p>gerente.adm@transportessagitario.com</p>
+                <p>administracion@transportessagitario.com</p>
+                <p>comercial@transportessagitario.com</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- PIE -->
+    <div class="contenedor_grid_pie">
+
+        <!-- DESCRIPCIÓN -->
+        <div class="pie_descripcion">
+            <img src="assets/logo/logo-1.png" alt="Logo 1">
+            <p>Contamos con flotas modernas de ómnibus, minibús, sprinter, camionetas y volquetes las cuales cumplen con
+                los más altos estándares de calidad y seguridad para garantizar un servicio seguro y confortable, además
+                de políticas y filosofía ambiental acordes con las necesidades de nuestra sociedad.</p>
+            <div class="pie_redes_sociales">
+                <a href="https://www.google.com" target="_blank"><i class="fas fa-chevron-down"></i></a>
+                <a href="https://www.google.com" target="_blank"><i class="fas fa-chevron-down"></i></a>
+                <a href="https://www.google.com" target="_blank"><i class="fas fa-chevron-down"></i></a>
+                <a href="https://www.google.com" target="_blank"><i class="fas fa-chevron-down"></i></a>
+            </div>
+        </div>
+
+        <!-- ENLACES -->
+        <div class="pie_enlaces">
+            <h3>ENLACES ÚTILES</h3>
+            <ul>
+                <li><i class="fas fa-chevron-down"></i><a routerLink="/somos">Sobre nosotros</a></li>
+                <li><i class="fas fa-chevron-down"></i><a routerLink="/contacto">Contáctenos</a></li>
+            </ul>
+        </div>
+
+        <!-- SERVICIOS -->
+        <div class="pie_servicios">
+            <h3>NUESTROS SERVICIOS</h3>
+            <ul>
+                <li><i class="fas fa-chevron-down"></i><a routerLink="/servicios">Nuestros servicios</a></li>
+                <li><i class="fas fa-chevron-down"></i><a  href="/assets/brochure/brochure.pdf" target="_blank">Brochure</a></li>
+            </ul>
+        </div>
+
+        <!-- SUSCRIPCIÓN -->
+        <div class="pie_suscripcion">
+            <h3>DEJA UN MENSAJE</h3>
+            <p>Envienos un mensaje de WhatsApp</p>
+            <div>
+                <input type="text" name="mensaje" [(ngModel)]="mensaje" id="" placeholder="Enviar mensaje...">
+                <button  (click)="enviarMensaje()"><i class="fas fa-chevron-down"></i></button>
+            </div>
+        </div>
+
+    </div>
+
+</footer>

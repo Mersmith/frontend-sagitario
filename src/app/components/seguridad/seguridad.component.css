@@ -1,0 +1,55 @@
+.contenedor_seguridad {
+    display: flex;
+    background: url("../../../assets/seguridad/seguridad-1.jpg");
+
+}
+
+.opacidad_contenedor_seguridad {
+    position: relative;
+    background-size: cover !important;
+    background-position: center !important;
+    z-index: 0;
+}
+
+.opacidad_contenedor_seguridad:after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background:  var(--color-primario);
+    z-index: -1;
+    opacity: 0.9;
+}
+
+.contenedor_seguridad h2 {
+    width: 100%;
+    background-color: var(--color-cuaternario);
+    color: var(--color-primario);
+    font-size: 30px;
+    font-weight: 700;
+    padding: 40px 20px;
+}
+
+.contenedor_seguridad p {
+    color: var(--color-secundario);
+    padding: 20px;
+    line-height: 30px;
+    margin: 18px 0px;
+    font-size: 20px;
+}
+
+.contenedor_seguridad ul {
+    padding: 20px;
+    color: var(--color-secundario);
+}
+
+.contenedor_seguridad ul li {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.contenedor_seguridad ul li i{
+    margin-right: 15px;
+}

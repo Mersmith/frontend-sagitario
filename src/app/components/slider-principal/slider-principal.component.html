@@ -1,0 +1,16 @@
+<div class="contenedor_slider_principal">
+    <div class="contenedor_slider" [style.transform]="'translateX(' + (-posicionActual * 100) + '%)'">
+        <div class="contenedor_slider_item" *ngFor="let slider of sliders; let i = index"
+            [class.active]="i === posicionActual">
+            <div class="contenedor_slider_descripcion">
+                <h2>{{ slider.titulo }}</h2>
+                <p>{{ slider.descripcion }}</p>
+            </div>
+            <img [src]="slider.imagen" alt="Slide Image">
+        </div>
+    </div>
+    <div class="contenedor_slider_controles">
+        <button class="slider_controles_retroceder" (click)="retroceder()"><i class="fas fa-chevron-down"></i> </button>
+        <button class="slider_controles_siguiente" (click)="siguiente()"><i class="fas fa-chevron-down"></i> </button>
+    </div>
+</div>

@@ -1,0 +1,16 @@
+.contenedor_linea{
+    display: flex;
+}
+
+.contenedor_linea img{
+    width: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 1000px) {
+
+    .contenedor_linea{
+        height: 30px;
+    }
+
+}

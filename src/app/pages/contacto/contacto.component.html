@@ -1,0 +1,82 @@
+<app-banner [titulo]="titulo"></app-banner>
+
+<app-carga [mostrar]="mostrandoCarga"></app-carga>
+
+<!-- CENTRAR ELEMENTO -->
+<div class="centrar_elemento">
+
+    <div class="contenedor_contacto">
+
+        <div class="contacto_formulario">
+            <h2>MENSAJE</h2>
+            <span *ngIf="estadoEnvio !== ''">{{estadoEnvio}}</span>
+
+            <form ngNativeValidate [formGroup]="formularioContacto" (ngSubmit)="enviarFormulario()">
+                <div>
+                    <input type="text" formControlName="nombre" required name="nombre" id="nombre"
+                        placeholder="Tú nombre.">
+                </div>
+                <div>
+                    <input type="email" formControlName="correo" required name="correo" id="correo"
+                        placeholder="Tú correo.">
+                </div>
+                <div>
+                    <input type="text" formControlName="celular" required name="celular" id="celular"
+                        placeholder="Celular">
+                </div>
+                <div>
+                    <input type="text" formControlName="asunto" required name="asunto" id="asunto"
+                        placeholder="Asunto del mensaje">
+                </div>
+                <div>
+                    <textarea formControlName="cuerpo" required name="cuerpo" id="cuerpo" cols="30" rows="10"
+                        placeholder="Escribe el mensaje"></textarea>
+
+                </div>
+                <div>
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="contacto_informacion">
+            <h2>INFORMACIÓN</h2>
+
+            <!-- ITEM -->
+            <div class="contacto_informacion_item">
+                <h3>TELÉFONOS:</h3>
+                <div class="contacto_informacion_display">
+                    <div><i class="fas fa-chevron-down"></i></div>
+                    <div>
+                        <p>076288366</p>
+                        <p>976391241</p>
+                        <p>987772531</p>
+                        <p>976332572</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ITEM -->
+            <div class="contacto_informacion_item">
+                <h3>DIRECCIÓN:</h3>
+                <div class="contacto_informacion_display">
+                    <div><i class="fas fa-chevron-down"></i></div>
+                    <div>
+                        <p>Jr. Los pensamientos N° 138</p>
+                        <p>Urb. El Jardín – Cajamarca</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- MAPA -->
+<div>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9415.675407601439!2d-78.52691784037809!3d-7.148665798253224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91b25a58d3a5a845%3A0x6398c1dc1ea710ab!2sPje.%20los%20Pensamientos%20138%2C%20Cajamarca%2006001!5e0!3m2!1ses-419!2spe!4v1689108822610!5m2!1ses-419!2spe"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>

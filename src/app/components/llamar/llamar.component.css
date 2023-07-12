@@ -1,0 +1,107 @@
+.contenedor_llamar {
+    display: flex;
+    width: 100%;
+}
+
+/* CONTENEDOR LLAMAR IMAGEN */
+.contenedor_llamar_imagen {
+    display: flex;
+    width: 50%;
+}
+
+.contenedor_llamar_imagen img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/* CONTENEDOR LLAMAR DESCRIPCIÓN */
+.contenedor_llamar_descripcion {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    background: url("../../../assets/fondos/fondo-3.png");
+    padding: 50px 30px;
+}
+
+/* CABECERA */
+.contenedor_llamar_descripcion a:first-child {
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--color-terciario);
+    margin: 5px 0px;
+    margin-bottom: 10px;
+    display: block;
+    text-decoration: none;
+}
+
+.contenedor_llamar_descripcion h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color:  var(--color-secundario);
+    line-height: 60px;
+}
+
+/* TELÉFONO */
+.contenedor_telefono {
+    display: flex;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+.contenedor_telefono div:first-child {
+    background-color: var(--color-terciario);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 52px;
+    color: var(--color-secundario);
+    font-size: 24px;
+    margin-right: 15px;
+}
+
+.contenedor_telefono div:last-child p {
+    color: var(--color-secundario);
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.contenedor_telefono div:last-child span {
+    color: var(--color-terciario);
+    font-weight: 700;
+    font-size: 28px;
+}
+
+/* BOTÓN */
+.contenedor_llamar_descripcion a:last-child {
+    margin: 10px 0px;
+    background-color: var(--color-terciario);
+    color: var(--color-secundario);
+    padding: 15px 25px;
+    text-decoration: none;
+    align-self: flex-start;
+}
+
+@media (max-width: 1000px) {
+
+    .contenedor_llamar {
+        flex-direction: column;
+    }
+
+    /* CONTENEDOR LLAMAR IMAGEN */
+    .contenedor_llamar_imagen {
+        width: 100%;
+    }
+
+    /* CONTENEDOR LLAMAR DESCRIPCIÓN */
+    .contenedor_llamar_descripcion {
+        width: 100%;
+    }
+
+    .contenedor_llamar_descripcion h2 {
+        font-size: 28px;
+        line-height: 35px;
+    }
+
+}

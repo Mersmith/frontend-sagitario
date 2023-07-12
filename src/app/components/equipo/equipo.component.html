@@ -1,0 +1,45 @@
+<!-- CENTRAR ELEMENTO -->
+<div class="centrar_elemento">
+
+    <div class="contenedor_equipo">
+        <!-- CONTENEDOR CLIENTES DESCRIPCIÓN -->
+        <div class="contenedor_equipo_descripcion">
+            <!-- CABECERA -->
+            <a href="">EQUIPO</a>
+            <h2>NUESTRO EQUIPO PROFESIONAL</h2>
+            <p>Mejore drásticamente las métricas interactivas para servicios confiables. Libere proactivamente el
+                comercio electrónico completamente investigado.
+            </p>
+        </div>
+
+        <!-- CONTENEDOR CONTROLES -->
+        <div class="controles_slider_equipo">
+            <button (click)="retroceder()">
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <button (click)="siguiente()">
+                <i class="fas fa-chevron-down"></i>
+            </button>
+        </div>
+        <!-- CONTENEDOR ITEMS CLIENTES -->
+        <div class="contenedor_items_equipo" #contenedorItems>
+            <div class="item_cliente" *ngFor="let equipoItem of equipo">
+                <div class="item_equipo_contenedor">
+                    <div class="item_equipo_datos">
+                        <img [src]="equipoItem.imagen" alt="">
+                        <div>
+                            <div class="item_equipo_icono">
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div>
+                                <h5>{{ equipoItem.nombre }}</h5>
+                                <span>{{ equipoItem.cargo }}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

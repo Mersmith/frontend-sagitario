@@ -1,0 +1,32 @@
+ng new frontend-sagitario
+
+ng generate component components/header
+ng generate component components/placeholder
+ng generate component components/footer
+ng generate component components/mision
+ng generate component components/vision
+ng generate component components/nosotros
+ng generate component components/contacto
+ng generate component components/servicios
+ng generate component components/clientes
+ng generate component components/estadisticas
+ng generate component components/llamar
+ng generate component components/equipo
+ng generate component components/caracteristicas
+ng generate component components/testimonios
+ng generate component components/album
+ng generate component components/banner
+ng generate component components/politica
+ng generate component components/linea
+ng generate component components/seguridad
+ng generate component components/carga
+
+ng generate component pages/inicio-pagina
+ng generate component pages/somos-pagina
+ng generate component pages/servicios-pagina
+ng generate component pages/politica-pagina
+ng generate component pages/contacto-pagina
+
+ng generate environments
+
+ng build --configuration=production

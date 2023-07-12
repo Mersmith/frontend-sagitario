@@ -1,0 +1,41 @@
+<div class="fondo_contenedor_servicios">
+    
+    <!-- CENTRAR ELEMENTO -->
+    <div class="centrar_elemento">
+
+        <div class="contenedor_servicios">
+            <!-- CONTENEDOR SERVICIOS DESCRIPCIÓN -->
+            <div class="contenedor_servicios_descripcion">
+                <!-- CABECERA -->
+                <a href="">SERVICIOS</a>
+                <h2>NUESTRO SERVICIO PARA USTED</h2>
+                <p>Contamos con flotas
+                    modernas de ómnibus, minibús, sprinter, camionetas y
+                    volquetes las cuales cumplen con los más altos estándares
+                    de calidad y seguridad.
+                </p>
+            </div>
+
+            <!-- CONTENEDOR SERVICIOS ITEMS -->
+            <div class="contenedor_servicios_items">
+
+                <!-- CONTENEDOR SERVICIOS ITEM -->
+                <div class="contenedor_servicios_item" *ngFor="let servicioItem of servicios">
+                    <img [src]="servicioItem.imagen" alt="">
+                    <div>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <h2>{{ servicioItem.titulo }}</h2>
+                    <!--<p>{{ servicioItem.descripcion }}</p>
+                    <hr>
+                    <a href="{{ servicioItem.link }}">
+                        <span>LEER MÁS</span><i class="fas fa-chevron-down"></i>
+                    </a>-->
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</div>

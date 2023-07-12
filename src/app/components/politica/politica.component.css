@@ -1,0 +1,52 @@
+.contenedor_politica {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 40px 0px;
+    padding: 0px 20px;
+}
+
+.contenedor_politica h2 {
+    background-color: red;
+    width: fit-content;
+    padding: 10px 40px;
+    font-size: 30px;
+    color: white;
+}
+
+.contenedor_politica p {
+    line-height: 30px;
+    margin: 18px 0px;
+    font-size: 20px;
+}
+
+.contenedor_politica div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor_politica div li {
+    margin-top: 14px;
+    font-size: 18px;
+}
+
+.contenedor_politica div i {
+    margin-right: 8px;
+}
+
+@media (max-width: 1000px) {
+
+    .contenedor_politica {
+        flex-direction: column;
+    }
+
+    .contenedor_politica div {
+        width: 100%;
+    }
+
+    .contenedor_politica div img {
+        margin-top: 40px;
+    }
+
+}
