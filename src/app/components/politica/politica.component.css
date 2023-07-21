@@ -7,11 +7,11 @@
 }
 
 .contenedor_politica h2 {
-    background-color: red;
+    background-color: var(--color-terciario);
     width: fit-content;
     padding: 10px 40px;
     font-size: 30px;
-    color: white;
+    color: var(--color-secundario);
 }
 
 .contenedor_politica p {

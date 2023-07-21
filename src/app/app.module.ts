@@ -29,7 +29,9 @@ import { SomosComponent } from './pages/somos/somos.component';
 import { PoliticaPaginaComponent } from './pages/politica/politica.component';
 import { ServiciosPaginaComponent } from './pages/servicios/servicios.component';
 import { HttpClientModule } from '@angular/common/http';
-import { CargaComponent } from './components/carga/carga.component'
+import { CargaComponent } from './components/carga/carga.component';
+import { IconosFlotantesComponent } from './components/iconos-flotantes/iconos-flotantes.component';
+import { DesplazarTopComponent } from './components/desplazar-top/desplazar-top.component'
 
 @NgModule({
   declarations: [
@@ -58,7 +60,9 @@ import { CargaComponent } from './components/carga/carga.component'
     SomosComponent,
     PoliticaPaginaComponent,
     ServiciosPaginaComponent,
-    CargaComponent
+    CargaComponent,
+    IconosFlotantesComponent,
+    DesplazarTopComponent
   ],
   imports: [
     BrowserModule,

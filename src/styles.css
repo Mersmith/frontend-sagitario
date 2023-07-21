@@ -23,7 +23,17 @@
     --color-quinario: #080C24;
     --color-quinario-hover: #040714;
     
-    --color-sombra: 0px 8px 20px rgba(7, 36, 95, 0.15);
+    --sombra-contenedor: 0px 8px 20px rgba(7, 36, 95, 0.15);
+
+    --color-borde: rgba(255, 255, 255, 0.2);
+
+    --color-linea-titulo: linear-gradient(90.09deg, #e33c2f -7.63%, rgba(250, 67, 24, 0) 99.84%);
+
+    --color-fondo-oscuro: rgba(0, 0, 0, 0.8);
+
+    --color-fondo-oscuro-banner: rgba(3, 0, 12, 0.6);
+
+    --color-fondo-input: rgba(8, 12, 36, 0.06);
 }
 
 ul {
@@ -32,6 +42,12 @@ ul {
 
 a {
     text-decoration: none;
+    color: inherit;
+}
+
+a:visited {
+    text-decoration: none;
+    color: inherit;
 }
 
 /* CENTRAR ELEMENTO */
