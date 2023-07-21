@@ -22,7 +22,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: var(--color-fondo-oscuro);
   z-index: 9999;
 }
 
@@ -37,7 +37,7 @@
 }
 
 .album_cerrar {
-  background-color: #FA4318;
+  background-color: var(--color-terciario);
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -45,11 +45,15 @@
   top: 10px;
   right: 10px;
   font-size: 20px;
-  color: #fff;
+  color: var(--color-secundario);
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.album_cerrar:hover {
+  background-color: var(--color-terciario-hover);
 }
 
 .album_controles {
@@ -64,12 +68,16 @@
   margin: 0 5px;
   background-color: transparent;
   border: none;
-  color: #fff;
+  color: var(--color-secundario);
   cursor: pointer;
 }
 
 .album_controles button {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: var(--color-primario);
+}
+
+.album_controles button:hover {
+  background-color: var(--color-primario-hover);
 }
 
 @media (max-width: 1400px) {

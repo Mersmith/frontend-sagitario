@@ -1,7 +1,7 @@
 .contenedor_vision {
     padding: 20px;
     background-color: var(--color-primario);
-    box-shadow: var(--color-sombra);
+    box-shadow: var(--sombra-contenedor);
     border-radius: 20px;
     position: relative;
     top: -60px;

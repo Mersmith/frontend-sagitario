@@ -1,7 +1,7 @@
 footer {
-    background-color: #080C24;
+    background-color: var(--color-primario);
     padding: 0px 20px;
-    color: white;
+    color: var(--color-secundario);
 }
 
 /* DIRECCIÓN */
@@ -11,7 +11,7 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid var(--color-borde);
     gap: 30px;
 }
 
@@ -26,7 +26,7 @@ footer {
     height: 80px;
     width: 80px;
     border-radius: 5px;
-    background: #FA4318;
+    background: var(--color-terciario);
     line-height: 80px;
     text-align: center;
     position: relative;
@@ -36,7 +36,7 @@ footer {
 .contenedor_direccion_contacto_horario>div div:first-child:after {
     content: "";
     position: absolute;
-    background: #FA4318;
+    background: var(--color-terciario);
     opacity: 0.3;
     height: 80px;
     width: 80px;
@@ -56,7 +56,7 @@ footer {
 
 .contenedor_direccion_contacto_horario p {
     margin-bottom: 10px;
-    color: #D6D6D6;
+    color: var(--color-secundario);
     ;
 }
 
@@ -94,8 +94,8 @@ footer {
 
 .pie_redes_sociales a {
     background: transparent;
-    border: 1px solid #FFFFFF;
-    color: #fff;
+    border: 1px solid var(--color-secundario);
+    color: var(--color-secundario);
     height: 40px;
     width: 40px;
     line-height: 40px;
@@ -106,8 +106,8 @@ footer {
 }
 
 .pie_redes_sociales a:hover {
-    background: #FA4318;
-    border: 1px solid #FA4318;
+    background: var(--color-terciario-hover);
+    border: 1px solid var(--color-terciario-hover);
 }
 
 .contenedor_grid_pie h3 {
@@ -117,7 +117,7 @@ footer {
     font-weight: 700;
     font-size: 24px;
     line-height: 31px;
-    color: #F8F8F8;
+    color: var(--color-secundario);
 }
 
 .contenedor_grid_pie h3:after {
@@ -127,7 +127,7 @@ footer {
     height: 3px;
     bottom: 0px;
     left: 0;
-    background: linear-gradient(90.09deg, #FA4318 -7.63%, rgba(250, 67, 24, 0) 99.84%);
+    background: var(--color-linea-titulo);
     transform: translate(0, 50%);
     z-index: 0;
 }
@@ -168,6 +168,8 @@ footer {
     border: 0;
     padding: 0 20px;
     width: 100%;
+    outline: none;
+    border: 0;
 }
 
 .pie_suscripcion button {
@@ -177,9 +179,13 @@ footer {
     font-size: 18px;
     font-weight: 500;
     border-radius: 0px;
-    background: #FA4318;
-    color: white;
+    background: var(--color-terciario);
+    color: var(--color-secundario);
     cursor: pointer;
+}
+
+.pie_suscripcion button:hover {
+    background: var(--color-terciario-hover);
 }
 
 @media (max-width: 1000px) {

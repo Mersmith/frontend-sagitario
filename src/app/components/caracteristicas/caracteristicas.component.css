@@ -1,7 +1,6 @@
 .contenedor_caracteristicas {
     padding: 20px;
     background-color: var(--color-secundario);
-    box-shadow: var(--color-sombra);
     border-radius: 20px;
     position: relative;
     top: -60px;
@@ -57,12 +56,13 @@
     border: none;
     font-size: 24px;
     color: var(--color-terciario);
-    padding: 5px 10px;
+    width: 40px;
+    height: 40px;
     margin: 0 5px;
     cursor: pointer;
     background-color: var(--color-secundario);
     border-radius: 50%;
-    box-shadow: var(--color-sombra);
+    box-shadow: var(--sombra-contenedor);
 }
 
 .controles_slider_caracteristicas button:hover {
@@ -92,13 +92,13 @@
 .item_caracteristica_contenedor {
     border-radius: 10px;
     padding: 30px;
-    /*background-color: rgba(8, 12, 36, 0.05);*/
+    box-shadow: var(--sombra-contenedor);
 }
 
 .item_caracteristica_contenedor h3 {
     font-weight: 700;
     font-size: 24px;
-    color: var(--color-quinario);
+    color: var(--color-secundario);
     line-height: 24px;
     margin-bottom: 15px;
 }
@@ -106,6 +106,7 @@
 .item_caracteristica_contenedor p {
     line-height: 24px;
     margin: 10px 0px;
+    color: var(--color-secundario);
 }
 
 .item_caracteristica_contenedor div {

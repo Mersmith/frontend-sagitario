@@ -4,3 +4,10 @@ git commit -m "Master"
 git log
 git remote add origin https://github.com/Mersmith/frontend-sagitario.git
 git push origin master
+
+git checkout -b 1_Produccion
+git branch
+git status
+git add .
+git commit -m "1 Produccion"
+git push origin 1_Produccion

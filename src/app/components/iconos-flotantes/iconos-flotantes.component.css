@@ -1,0 +1,22 @@
+.contenedor_iconos_flotantes {
+    position: fixed;
+    z-index: 1000;
+    top: 50%;
+    right: 0px;
+}
+
+.contenedor_iconos_flotantes a {
+    background-color: var(--color-terciario);
+    color: var(--color-secundario);
+    width: 40px;
+    height: 40px;
+    border-radius: 50% 0% 0% 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.contenedor_iconos_flotantes a:hover {
+    background-color: var(--color-terciario-hover);
+}

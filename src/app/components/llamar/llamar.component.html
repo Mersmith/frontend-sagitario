@@ -9,20 +9,20 @@
     <div class="contenedor_llamar_descripcion">
         <!-- CABECERA -->
         <a href="">HABLEMOS</a>
-        <h2>¿NECESITAS AYUDA? OBTÉN UNA CONSULTA GRATUITA</h2>
+        <h2>¿NECESITAS INFORMACIÓN ACERCA DE NUESTROS SERVICIOS?</h2>
 
         <!-- TELÉFONO -->
         <div class="contenedor_telefono">
             <div>
-                <i class="fas fa-chevron-down"></i>
+                <i class="fas fa-phone-volume"></i>
             </div>
             <div>
-                <p>tiene alguna pregunta</p>
-                <span>+51 976391241</span>
+                <!--<p>tiene alguna pregunta</p>-->
+                <span>{{ celular }}</span>
             </div>
         </div>
 
         <!-- BOTÓN -->
-        <a href="">CONTÁCTENOS</a>
+        <a href="tel:{{ celular }}" target="_blank">CONTÁCTANOS</a>
     </div>
 </div>

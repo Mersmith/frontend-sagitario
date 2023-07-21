@@ -9,7 +9,7 @@ import { EnviarEmailService } from 'src/app/services/enviar-email.service';
 })
 export class ContactoComponent {
 
-  titulo = 'Contáctenos';
+  titulo = 'Contáctanos';
 
   formularioContacto: FormGroup;
 

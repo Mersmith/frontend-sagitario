@@ -14,7 +14,7 @@
 .contenedor_clientes_descripcion a {
     font-weight: 600;
     font-size: 16px;
-    color: #FA4318;
+    color: var(--color-terciario);
     margin: 5px 0px;
     margin-bottom: 10px;
     display: block;
@@ -24,7 +24,7 @@
 .contenedor_clientes_descripcion h2 {
     font-size: 40px;
     font-weight: 700;
-    color: #080C24;
+    color: var(--color-primario-primario);
     line-height: 60px;
     text-align: center;
 }
@@ -46,18 +46,19 @@
 .controles_slider_clientes button {
     border: none;
     font-size: 24px;
-    color: #d11010;
-    padding: 5px 10px;
+    color: var(--color-terciario);
+    width: 40px;
+    height: 40px;
     margin: 0 5px;
     cursor: pointer;
-    background-color: white;
+    background-color: var(--color-secundario);
     border-radius: 50%;
     box-shadow: 0px 8px 20px rgba(7, 36, 95, 0.15);
 }
 
 .controles_slider_clientes button:hover {
-    color: white;
-    background-color: #d11010;
+    color: var(--color-secundario);
+    background-color: var(--color-terciario-hover);
 }
 
 /* CONTENEDOR ITEMS CLIENTES */
@@ -85,7 +86,8 @@
 }
 
 .item_cliente_contenedor img {
-    height: 200px;;
+    height: 200px;
+    ;
     width: auto;
     margin: auto;
     filter: grayscale(1);
