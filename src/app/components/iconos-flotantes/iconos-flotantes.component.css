@@ -7,7 +7,7 @@
 
 .contenedor_iconos_flotantes a {
     background-color: var(--color-terciario);
-    color: var(--color-secundario);
+    background-color: var(--color-secundario);
     width: 40px;
     height: 40px;
     border-radius: 50% 0% 0% 50%;
@@ -17,6 +17,10 @@
     margin-bottom: 10px;
 }
 
+.contenedor_iconos_flotantes a i{
+    font-size: 25px;
+}
+
 .contenedor_iconos_flotantes a:hover {
-    background-color: var(--color-terciario-hover);
+    background-color: var(--color-secundario-hover);
 }

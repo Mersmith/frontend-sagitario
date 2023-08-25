@@ -1,11 +1,11 @@
 .contenido_pagina {
-    padding-top: 120px;
+    padding-top: 130px;
 }
 
 @media (max-width: 1000px) {
 
     .contenido_pagina {
-        padding-top: 90px;
+        padding-top: 100px;
     }
 
 }

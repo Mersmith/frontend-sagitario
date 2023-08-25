@@ -23,7 +23,9 @@
                 <div class="contenedor_servicios_item" *ngFor="let servicioItem of servicios">
                     <img [src]="servicioItem.imagen" alt="">
                     <div>
-                        <i class="fas fa-plus"></i>
+                        <a href="{{ servicioItem.link }}">
+                            <i class="fas fa-plus"></i>
+                        </a>
                     </div>
                     <h2>{{ servicioItem.titulo }}</h2>
                     <!--<p>{{ servicioItem.descripcion }}</p>

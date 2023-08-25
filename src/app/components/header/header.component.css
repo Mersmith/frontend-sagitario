@@ -1,8 +1,26 @@
-/* HEADER */
-header {
+.cabecera_menu{
   position: fixed;
   z-index: 100;
   width: 100%;
+}
+
+/* ICONOS */
+.cabecera_iconos{
+  background-color: var(--color-primario);
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 15px;
+  padding-right: 15px;
+}
+
+.cabecera_iconos a{
+  color: white;
+}
+
+/* HEADER */
+header {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -137,7 +155,7 @@ header img {
   .contenedor_menu_principal {
     display: block;
     position: absolute;
-    top: 90px;
+    top: 130px;
     left: 0px;
     left: -200px;
     width: 200px;

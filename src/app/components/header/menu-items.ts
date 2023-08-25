@@ -14,12 +14,8 @@ export const menuItems = [
         nombre: 'Transporte',
         subMenu: [
           {
-            nombre: 'Personal y alquiler de unidades',
-            link: '/romantic'
-          },
-          {
-            nombre: 'Carga pesada y afines',
-            link: '/bussiness'
+            nombre: 'Transporte de personal',
+            link: '/transporte-de-personal'
           }
         ]
       },
@@ -27,12 +23,8 @@ export const menuItems = [
         nombre: 'Alquiler',
         subMenu: [
           {
-            nombre: 'Maquinaria pesada',
-            link: '/romantic'
-          },
-          {
             nombre: 'Unidades',
-            link: '/romantic'
+            link: '/alquiler-de-unidades'
           }
         ]
       }
