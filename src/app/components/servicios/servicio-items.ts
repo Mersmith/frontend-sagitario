@@ -1,20 +1,14 @@
 export const servicioItems = [
     {
-        titulo: 'SERVICIO DE TRANSPORTE DE PERSONAL Y ALQUILER DE UNIDADES',
+        titulo: 'TRANSPORTE DE PERSONAL',
         descripcion: '',
-        link: '#',
+        link: '/transporte-de-personal',
         imagen: 'assets/servicios/servicios-1.png'
     },
     {
-        titulo: 'TRANSPORTE DE CARGA PESADA Y AFINES',
+        titulo: 'ALQUILER DE UNIDADES',
         descripcion: '',
-        link: '#',
+        link: '/alquiler-de-unidades',
         imagen: 'assets/servicios/servicios-2.png'
-    },
-    {
-        titulo: 'ALQUILER DE MAQUINARIA PESADA',
-        descripcion: '',
-        link: '#',
-        imagen: 'assets/servicios/servicios-3.png'
-    },
+    }
 ];

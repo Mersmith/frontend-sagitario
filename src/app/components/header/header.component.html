@@ -1,52 +1,63 @@
-<header>
-  <!-- LOGO -->
-  <a routerLink="/">
-    <img src="assets/logo/logo-1.png" alt="Logo 1">
-  </a>
+<div class="cabecera_menu">
 
-  <!-- CONTENEDOR MENU PRINCIPAL -->
-  <div class="contenedor_menu_principal" [class.boton_menu_hamburguesa_abierto]="abiertoMenuCelular">
-    <nav>
-      <!-- MENU 1 -->
-      <ul class="menu">
-        <li *ngFor="let menuItem of menuItems" [class.active]="menuItem.estaActivo">
-          <!-- ITEMS MENU 1 -->
-          <a (click)="toogleSubMenu1(menuItem)">
-            {{ menuItem.nombre }}
-            <i class="fas fa-chevron-down" *ngIf="menuItem.subMenu"></i>
-          </a>
-
-          <!-- SUB MENU 1 -->
-          <ul class="sub-menu-1" *ngIf="menuItem.subMenu && menuItem.abiertoSubMenu"
-            [class.menu_active]="menuItem.estaActivo">
-            <li *ngFor="let subMenuItem of menuItem.subMenu" [class.active]="subMenuItem.estaActivo">
-              <!-- ITEMS SUB MENU 1 -->
-              <a (click)="toggleSubMenu2(subMenuItem)">
-                {{ subMenuItem.nombre }}
-                <i class="fas fa-chevron-down" *ngIf="subMenuItem.subMenu"></i>
-              </a>
-
-              <!-- SUB MENU 2 -->
-              <ul class="sub-menu-2" *ngIf="subMenuItem.subMenu && subMenuItem.abiertoSubMenu"
-                [class.menu_active]="subMenuItem.estaActivo">
-                <li *ngFor="let subSubMenu of subMenuItem.subMenu">
-                  <!-- ITEMS SUB MENU 2 -->
-                  <a (click)="toggleSubMenu3(subSubMenu)">{{ subSubMenu.nombre }}</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
-
-    <!-- BOTÓN CONTACTAR -->
-    <a class="boton_accion" href="/assets/brochure/brochure.pdf" target="_blank">Brochure</a>
-
+  <div class="cabecera_iconos">
+    <a href="tel:51987772531" target="_blank"><i class="fas fa-phone-volume"></i> 987772531</a> 
+    <a href="https://www.facebook.com/transpsagitario" target="_blank"><i class="fab fa-facebook"></i></a> 
+    <a href="https://www.linkedin.com/company/transportes-sagitario-srl" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="https://www.instagram.com/transportessagitario" target="_blank"><i class="fab fa-instagram"></i></a>
   </div>
 
-  <!-- BOTÓN MENU HAMBURGUESA -->
-  <div class="boton_menu_hamburguesa" (click)="toogleMenuCelular()">
-    <i class="fas fa-bars"></i>
-  </div>
-</header>
+  <header>
+    <!-- LOGO -->
+    <a routerLink="/">
+      <img src="assets/logo/logo-1.png" alt="Logo 1">
+    </a>
+
+    <!-- CONTENEDOR MENU PRINCIPAL -->
+    <div class="contenedor_menu_principal" [class.boton_menu_hamburguesa_abierto]="abiertoMenuCelular">
+      <nav>
+        <!-- MENU 1 -->
+        <ul class="menu">
+          <li *ngFor="let menuItem of menuItems" [class.active]="menuItem.estaActivo">
+            <!-- ITEMS MENU 1 -->
+            <a (click)="toogleSubMenu1(menuItem)">
+              {{ menuItem.nombre }}
+              <i class="fas fa-chevron-down" *ngIf="menuItem.subMenu"></i>
+            </a>
+
+            <!-- SUB MENU 1 -->
+            <ul class="sub-menu-1" *ngIf="menuItem.subMenu && menuItem.abiertoSubMenu"
+              [class.menu_active]="menuItem.estaActivo">
+              <li *ngFor="let subMenuItem of menuItem.subMenu" [class.active]="subMenuItem.estaActivo">
+                <!-- ITEMS SUB MENU 1 -->
+                <a (click)="toggleSubMenu2(subMenuItem)">
+                  {{ subMenuItem.nombre }}
+                  <i class="fas fa-chevron-down" *ngIf="subMenuItem.subMenu"></i>
+                </a>
+
+                <!-- SUB MENU 2 -->
+                <ul class="sub-menu-2" *ngIf="subMenuItem.subMenu && subMenuItem.abiertoSubMenu"
+                  [class.menu_active]="subMenuItem.estaActivo">
+                  <li *ngFor="let subSubMenu of subMenuItem.subMenu">
+                    <!-- ITEMS SUB MENU 2 -->
+                    <a (click)="toggleSubMenu3(subSubMenu)">{{ subSubMenu.nombre }}</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- BOTÓN CONTACTAR -->
+      <a class="boton_accion" href="/assets/brochure/brochure.pdf" target="_blank">Brochure</a>
+
+    </div>
+
+    <!-- BOTÓN MENU HAMBURGUESA -->
+    <div class="boton_menu_hamburguesa" (click)="toogleMenuCelular()">
+      <i class="fas fa-bars"></i>
+    </div>
+  </header>
+
+</div>

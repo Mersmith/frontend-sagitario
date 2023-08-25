@@ -29,6 +29,8 @@ ng generate component pages/somos-pagina
 ng generate component pages/servicios-pagina
 ng generate component pages/politica-pagina
 ng generate component pages/contacto-pagina
+ng generate component pages/transporte-personal-pagina
+ng generate component pages/alquilar-unidades-pagina
 
 ng generate environments
 
