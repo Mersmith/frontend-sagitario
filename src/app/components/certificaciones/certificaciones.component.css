@@ -1,0 +1,56 @@
+/* CONTENEDOR SERVICIOS */
+.contenedor_certificaciones {
+    padding: 80px 20px;
+}
+
+/* CONTENEDOR SERVICIOS DESCRIPCIÓN */
+.contenedor_certificaciones_descripcion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0px;
+}
+
+/* CABECERA */
+.contenedor_certificaciones_descripcion a {
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--color-terciario);
+    margin: 5px 0px;
+    margin-bottom: 10px;
+    display: block;
+    text-decoration: none;
+}
+
+.contenedor_certificaciones_descripcion h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--color-primario);
+    line-height: 60px;
+    text-align: center;
+}
+
+.contenedor_certificaciones_descripcion p {
+    line-height: 30px;
+    margin: 18px 0px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.contenedor_certificaciones_descripcion div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 1000px) {
+
+    .contenedor_certificaciones_descripcion div {
+        width: 100%;
+    }
+
+    .contenedor_certificaciones_descripcion div img {
+        margin-top: 40px;
+    }
+
+}

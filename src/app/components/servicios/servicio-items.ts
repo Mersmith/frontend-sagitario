@@ -1,12 +1,12 @@
 export const servicioItems = [
     {
-        titulo: 'TRANSPORTE DE PERSONAL',
+        titulo: 'TRANSPORTE',
         descripcion: '',
         link: '/transporte-de-personal',
         imagen: 'assets/servicios/servicios-1.png'
     },
     {
-        titulo: 'ALQUILER DE UNIDADES',
+        titulo: 'ALQUILER',
         descripcion: '',
         link: '/alquiler-de-unidades',
         imagen: 'assets/servicios/servicios-2.png'

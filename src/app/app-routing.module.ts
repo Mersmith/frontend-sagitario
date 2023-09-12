@@ -14,7 +14,7 @@ const routes: Routes = [
   { path: '', component: InicioComponent },
   { path: 'somos', component: SomosComponent },
   { path: 'servicios', component: ServiciosPaginaComponent },
-  { path: 'politica', component: PoliticaPaginaComponent },
+  { path: 'certificaciones', component: PoliticaPaginaComponent },
   { path: 'contacto', component: ContactoComponent },
   { path: 'transporte-de-personal', component: TransportePersonalPaginaComponent },
   { path: 'alquiler-de-unidades', component: AlquilarUnidadesPaginaComponent },
@@ -22,7 +22,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { scrollPositionRestoration: 'enabled' })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
