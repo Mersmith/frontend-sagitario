@@ -64,9 +64,10 @@ footer {
 .contenedor_grid_pie {
     padding: 50px 0px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-areas: "pie_descripcion  pie_enlaces pie_servicios pie_suscripcion";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "pie_descripcion  pie_enlaces pie_servicios";
     gap: 20px;
+    justify-items: center;
 }
 
 .pie_descripcion {

@@ -18,3 +18,10 @@ git status
 git add .
 git commit -m "2 Produccion"
 git push origin 2_Produccion
+
+git checkout -b 3_Produccion
+git branch
+git status
+git add .
+git commit -m "3 Produccion"
+git push origin 3_Produccion

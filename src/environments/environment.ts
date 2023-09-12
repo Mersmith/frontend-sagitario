@@ -1,5 +1,5 @@
 export const environment = {
     production: false,
-    celular: '51987772531',
+    celular: '51937692700',
     apiUrl: 'http://localhost/frontend-sagitario/backend'
 };

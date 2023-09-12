@@ -33,7 +33,9 @@ import { CargaComponent } from './components/carga/carga.component';
 import { IconosFlotantesComponent } from './components/iconos-flotantes/iconos-flotantes.component';
 import { DesplazarTopComponent } from './components/desplazar-top/desplazar-top.component';
 import { TransportePersonalPaginaComponent } from './pages/transporte-personal-pagina/transporte-personal-pagina.component';
-import { AlquilarUnidadesPaginaComponent } from './pages/alquilar-unidades-pagina/alquilar-unidades-pagina.component'
+import { AlquilarUnidadesPaginaComponent } from './pages/alquilar-unidades-pagina/alquilar-unidades-pagina.component';
+import { CertificacionesComponent } from './components/certificaciones/certificaciones.component';
+import { AnimacionComponent } from './components/animacion/animacion.component'
 
 @NgModule({
   declarations: [
@@ -66,7 +68,9 @@ import { AlquilarUnidadesPaginaComponent } from './pages/alquilar-unidades-pagin
     IconosFlotantesComponent,
     DesplazarTopComponent,
     TransportePersonalPaginaComponent,
-    AlquilarUnidadesPaginaComponent
+    AlquilarUnidadesPaginaComponent,
+    CertificacionesComponent,
+    AnimacionComponent
   ],
   imports: [
     BrowserModule,

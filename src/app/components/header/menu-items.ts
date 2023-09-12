@@ -12,28 +12,18 @@ export const menuItems = [
     subMenu: [
       {
         nombre: 'Transporte',
-        subMenu: [
-          {
-            nombre: 'Transporte de personal',
-            link: '/transporte-de-personal'
-          }
-        ]
+        link: '/transporte-de-personal'
       },
       {
         nombre: 'Alquiler',
-        subMenu: [
-          {
-            nombre: 'Unidades',
-            link: '/alquiler-de-unidades'
-          }
-        ]
+        link: '/alquiler-de-unidades'
       }
     ]
   }
   ,
   {
-    nombre: 'Política',
-    link: '/politica'
+    nombre: 'Certificaciones',
+    link: '/certificaciones'
   },
   {
     nombre: 'Contacto',

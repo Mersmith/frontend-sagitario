@@ -1,11 +1,11 @@
-.cabecera_menu{
+.cabecera_menu {
   position: fixed;
   z-index: 100;
   width: 100%;
 }
 
 /* ICONOS */
-.cabecera_iconos{
+.cabecera_iconos {
   background-color: var(--color-primario);
   height: 40px;
   display: flex;
@@ -15,8 +15,17 @@
   padding-right: 15px;
 }
 
-.cabecera_iconos a{
+.cabecera_iconos_movil {
+  display: none;
+}
+
+.cabecera_iconos_computadora {
+  margin-left: 20px;
+}
+
+.cabecera_iconos a {
   color: white;
+  font-size: 18px;
 }
 
 /* HEADER */
@@ -137,6 +146,19 @@ header img {
 .boton_menu_hamburguesa:hover {
   color: var(--color-terciario-hover);
 }
+
+@media (max-width: 1300px) {
+
+  .cabecera_iconos_movil {
+    display: flex;
+  }
+
+  .cabecera_iconos_computadora {
+    display: none;
+  }
+
+}
+
 
 @media (max-width: 1000px) {
 

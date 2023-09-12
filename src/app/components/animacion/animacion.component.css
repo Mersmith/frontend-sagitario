@@ -1,0 +1,41 @@
+.contenedor_animacion{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.full_footer {
+    background: 0 0;
+    position: relative;
+    height: auto;
+}
+
+.buss {
+    width: 270px;
+    transform: translateY(30%);
+    position: absolute;
+    left: 10%;
+    bottom: 20%;
+}
+
+.buss img {
+    display: block;
+    width: 100%;
+}
+
+.cont_line {
+    width: 2616px;
+    height: 264px;
+    background-image: url('../../../assets/animacion/paisaje.png');
+    -webkit-animation: 4s linear infinite AutoPista;
+    animation: 4s linear infinite AutoPista;
+}
+
+@keyframes AutoPista {
+    0% {
+        background-position: 100% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}

@@ -20,6 +20,8 @@ ng generate component components/politica
 ng generate component components/linea
 ng generate component components/seguridad
 ng generate component components/carga
+ng generate component components/certificaciones
+ng generate component components/animacion
 
 ng generate component components/iconos-flotantes
 ng generate component components/desplazar-top
