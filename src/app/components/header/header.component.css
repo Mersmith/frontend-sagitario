@@ -121,6 +121,12 @@ header img {
   background-color: var(--color-primario);
 }
 
+.botones_acciones {
+  display: flex;
+  gap: 5px;
+  text-align: center;
+}
+
 /* BOTÓN CONTACTAR*/
 .boton_accion {
   color: var(--color-secundario);
@@ -133,6 +139,20 @@ header img {
 
 .boton_accion:hover {
   background-color: var(--color-terciario-hover);
+}
+
+/* BOTÓN CONTACTAR*/
+.boton_accion_2 {
+  color: var(--color-primario);
+  padding: 18px 28px;
+  background-color: var(--color-cuaternario);
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.boton_accion_2:hover {
+  background-color: var(--color-cuaternario-hover);
 }
 
 /* BOTÓN MENU HAMBURGUESA */
@@ -155,6 +175,10 @@ header img {
 
   .cabecera_iconos_computadora {
     display: none;
+  }
+
+  .botones_acciones {
+    flex-direction: column;
   }
 
 }
