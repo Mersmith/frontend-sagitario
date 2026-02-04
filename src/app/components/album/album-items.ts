@@ -27,6 +27,6 @@ export const albumItems = [
         url: 'assets/album/album-9.jpg',
     },
     {
-        url: 'assets/album/album-10.jpg',
+        url: 'assets/album/album-11.jpg',
     }
 ];
